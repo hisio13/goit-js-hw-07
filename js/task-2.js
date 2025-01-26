@@ -35,18 +35,5 @@ const galleryMarkup = images
       </li>`
   )
   .join('');
-
-gallery.innerHTML = galleryMarkup;
-
-
-const imageContainer = document.getElementById('image-container');
-const fragment = document.createDocumentFragment();
-
-images.forEach(image => {
-  const imgElement = document.createElement('img');
-  imgElement.src = image.url;
-  imgElement.alt = image.alt;
-  fragment.appendChild(imgElement);
-});
-
-imageContainer.appendChild(fragment);
+  
+  gallery.innerHTML = galleryMarkup;
